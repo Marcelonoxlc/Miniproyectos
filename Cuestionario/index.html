@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="cuestionario">
+  <h1>Cuestionario</h1>
+  <form id="formulario">
+    <div class="pregunta">
+      <p>¿Cuál es la capital de Francia?</p>
+      <input type="radio" name="p1" value="a"> París<br>
+      <input type="radio" name="p1" value="b"> Roma<br>
+      <input type="radio" name="p1" value="c"> Berlín<br>
+    </div>
+    <div class="pregunta">
+      <p>¿Verdadero o Falso? El agua hierve a 100 grados Celsius.</p>
+      <input type="radio" name="p2" value="verdadero"> Verdadero<br>
+      <input type="radio" name="p2" value="falso"> Falso<br>
+    </div>
+    <div class="pregunta">
+      <p>Completa la oración: "El sol sale por el ________."</p>
+      <input type="text" name="p3" title="Ayuda: punto cardinal"><br>
+    </div>
+    <div class="pregunta">
+      <p>Relaciona el siguiente concepto:</p>
+      <select name="p4a">
+        <option value="a">HTML</option>
+      </select>
+      <select name="p4b">
+        <option value="a">Diseño</option>
+        <option value="b">Estructura</option>
+        <option value="c">Interactividad</option>
+        <option value="c">Estilo</option>
+        <option value="c">Migración</option>
+      </select>
+    </div>
+    <button type="button" onclick="calcularResultado()">Enviar respuestas</button>
+  </form>
+  <div id="resultado"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

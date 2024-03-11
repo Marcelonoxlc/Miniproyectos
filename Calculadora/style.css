@@ -1,0 +1,35 @@
+.calculator {
+    width: 300px; /* Cambia el tamaño de la calculadora */
+    margin: 0 auto; /* Centra la calculadora horizontalmente */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #e0e0e0; /* Cambia el color de fondo de la calculadora */
+    border-radius: 10px; /* Agrega bordes redondeados */
+  }
+  
+  #display {
+    width: calc(100% - 20px); /* Ajusta el ancho del display */
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px; /* Cambia el tamaño del texto en el display */
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  button {
+    padding: 15px; /* Aumenta el tamaño de los botones */
+    font-size: 18px; /* Cambia el tamaño del texto de los botones */
+    background-color: #b0bec5; /* Cambia el color de fondo de los botones */
+    color: #fff; /* Cambia el color del texto de los botones a blanco */
+    border: none;
+    border-radius: 5px; /* Agrega bordes redondeados */
+  }
+
+  button:hover {
+    background-color: #78909c; /* Cambia el color de fondo de los botones al pasar el cursor */
+  }
+  
